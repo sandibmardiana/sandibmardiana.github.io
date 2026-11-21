@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<title>PlayStation™4 Exploit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+var histlength=history.length;history.go(-histlength 2);
+</script>
+<h1 id=msgs>PlayStation™4 Exploit</h1>
+<hr>
+<br>
+<div id=menu>
+<h1 style="font-size: 18px;color: yellow;">Select Your Firmware</h1>
+<button class="btn btn-multi" onmouseover="msgs.innerHTML='PlayStation™4 All Firmware'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit'" onclick="location.replace('aio/index.html')">ALL FIRMWARE</button>
+<button class="btn" onmouseover="msgs.innerHTML='PlayStation™4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit'" onclick="location.replace('505/index.html')">5.05 FW v2.5</button>
+<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PlayStation™4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 Exploit Host by GamerHack'">6.72 FW</button></a>
+<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PlayStation™4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit'">6.72 FW v3.0</button></a>
+<br>
+<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PlayStation™4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit'"> 9.00 FW</button></a>
+<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PlayStation™4 9.00 FW Host v3.0 - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit Host'">9.00 FW v3.0</button></a>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User&#8217;s Guide without using DNS'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit'" onclick="location.replace('restore/index.html')">RESTORE HOST</button>
+<br>
+<button class="btn btn-onln" onmouseover="msgs.innerHTML='If you like my work you can support me with a donation.'" onmouseout="msgs.innerHTML='PlayStation™4 Exploit'" onclick="donations()" style="font-size: 18px;margin-top: 80px;margin-bottom: 77px;width: 300px;">FOR DONATION (QRIS & BANK)</button>
+</div>
+<div id=crypto>
+<h1 style="font-size: 18px;color: yellow;">Donate with QRIS:</h1>
+<img src="btc.jpg" width="150" height="150">
+<br>
+<h1 style="font-size: 18px;color: yellow;">Donate with BANK:</h1>
+<img src="eth.jpg" width="150" height="150">
+<br>
+<button class="btn" onclick="load_menu()">RETURN</button>
+</div>
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
+</body>
+</html>
